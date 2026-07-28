@@ -1,0 +1,11 @@
+question,answer
+What is a data structure?,A data structure is a way of organizing and storing data so it can be accessed and modified efficiently.
+What is the difference between an array and a linked list?,"An array stores elements in contiguous memory with O(1) access by index, while a linked list stores elements as nodes connected by pointers, allowing O(1) insertion/deletion but O(n) access."
+What is a stack?,"A stack is a linear data structure that follows Last In First Out (LIFO) order. Elements are added and removed from the same end, called the top."
+What is a queue?,A queue is a linear data structure that follows First In First Out (FIFO) order. Elements are added at the rear and removed from the front.
+What is a binary tree?,"A binary tree is a hierarchical data structure where each node has at most two children, referred to as the left child and the right child."
+What is the time complexity of searching in a balanced binary search tree?,"Searching in a balanced binary search tree takes O(log n) time, since the tree height is logarithmic relative to the number of nodes."
+What is a hash table?,"A hash table is a data structure that maps keys to values using a hash function, allowing average O(1) time complexity for insertion, deletion, and lookup."
+What is a graph in data structures?,"A graph is a collection of nodes (vertices) connected by edges, used to represent networks such as social connections, maps, or dependencies."
+What is the difference between BFS and DFS?,"BFS (Breadth-First Search) explores a graph level by level using a queue, while DFS (Depth-First Search) explores as far as possible along each branch using a stack or recursion."
+What is Big O notation?,"Big O notation describes the upper bound of an algorithm's time or space complexity as the input size grows, used to compare algorithm efficiency."

@@ -1,0 +1,19 @@
+Course: Introduction to Python Programming
+Instructor: TBD
+Duration: 8 weeks
+
+Week 1: Introduction to Python, installing Python, writing your first script.
+Week 2: Variables, data types, and basic operators.
+Week 3: Control flow - if statements, loops (for, while).
+Week 4: Functions - defining, calling, arguments, return values.
+Week 5: Data structures - lists, tuples, dictionaries, sets.
+Week 6: String manipulation and file handling.
+Week 7: Object-oriented programming - classes and objects.
+Week 8: Error handling, modules, and final project.
+
+Grading:
+- Assignments: 40%
+- Midterm exam: 20%
+- Final project: 40%
+
+Prerequisites: None. This course is designed for absolute beginners.
