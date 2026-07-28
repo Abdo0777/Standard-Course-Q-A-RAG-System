@@ -109,6 +109,3 @@ The app loads and indexes all course materials, downloads the embedding and lang
 - For faster inference, a CUDA-enabled GPU is recommended when loading the LLM.
 - Large source files (e.g. full textbook PDFs) may need to be excluded from version control — see `.gitignore`.
 
-## License
-
-For educational use.
