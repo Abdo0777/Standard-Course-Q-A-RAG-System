@@ -8,9 +8,8 @@ import faiss
 import numpy as np
 import gradio as gr
 
-DATA_DIR = "course_materials"  # folder must sit next to this script
+DATA_DIR = "course_materials"  
 
-# ---------- Step 1-2: Loaders ----------
 
 def load_pdf(path):
     reader = PdfReader(path)
@@ -59,8 +58,6 @@ print("Loading and chunking course materials...")
 all_chunks = build_chunks()
 print(f"Total chunks: {len(all_chunks)}")
 
-# ---------- Step 3: Embeddings + FAISS index ----------
-
 print("Loading embedding model...")
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -75,8 +72,6 @@ dim = embeddings.shape[1]
 index = faiss.IndexFlatL2(dim)
 index.add(embeddings)
 print(f"Stored {index.ntotal} chunks in FAISS index")
-
-# ---------- Step 4: Retriever + LLM ----------
 
 print("Loading LLM...")
 llm = pipeline(
@@ -117,8 +112,6 @@ def answer_question(query, course_filter=None, k=3):
     answer = response[len(prompt):].strip()
     sources = list({c["source"] for c in retrieved})
     return answer, sources
-
-# ---------- Step 5: Gradio UI ----------
 
 COURSES = ["All Courses", "Intro to Python Programming", "Data Structures", "Machine Learning Basics"]
 
